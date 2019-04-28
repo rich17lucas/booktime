@@ -24,7 +24,7 @@ def generate_thumbnail(sender, instance, **kwargs):
     # Set save = Fasle, otherwise it will loop infinitely
     instance.thumbnail.save(
         instance.image.name,
-        ContentFile(temp_thumb.read())
+        ContentFile(temp_thumb.read()),
         save=False
     )
     temp_thumb.close()

@@ -25,5 +25,5 @@ class ProductTag(models.Model):
     name = models.CharField(max_length=32)
     slug = models.SlugField(max_length=48)
     description = models.TextField(blank=True)
-    actice = models.BooleanField(default=True)
+    active = models.BooleanField(default=True)
 
